@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NV Energy Solar — Layer Orbit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/nv-energy-solar.css" />
+  </head>
+  <body>
+    <div id="loader" aria-busy="true" aria-label="Loading">
+      <div class="loader-brand">NV Energy Solar</div>
+      <div id="loader-bar" class="loader-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+        <div id="loader-bar-fill" class="loader-bar-fill"></div>
+      </div>
+      <div id="loader-percent" class="loader-percent">0%</div>
+    </div>
+
+    <header class="site-header">
+      <nav class="site-nav">
+        <a class="logo" href="#">NV Energy</a>
+        <div class="nav-links">
+          <a href="#scroll-container">Story</a>
+          <a href="https://www.nvenergy.com/" target="_blank" rel="noopener noreferrer">nvenergy.com</a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="hero-standalone" class="hero-standalone" aria-label="Introduction">
+      <span class="section-label">Clean power for Nevada</span>
+      <h1 class="hero-heading">
+        <span class="word">NV</span>
+        <span class="word">Energy</span>
+        <span class="word">Solar</span>
+      </h1>
+      <p class="hero-tagline">
+        Scroll through the orbit—layers of glass, silicon, and light become the
+        grid you rely on.
+      </p>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="scroll-indicator-line"></span>
+        <span class="scroll-indicator-arrow">↓</span>
+      </div>
+    </section>
+
+    <div class="canvas-wrap" id="canvas-wrap">
+      <canvas id="canvas" aria-hidden="true"></canvas>
+    </div>
+
+    <div id="dark-overlay" class="dark-overlay" aria-hidden="true"></div>
+
+    <div class="marquee-wrap" data-scroll-speed="-28" aria-hidden="true">
+      <div class="marquee-text">
+        NV Energy Solar — Nevada sunshine, engineered — NV Energy Solar — Power
+        that orbits home —
+      </div>
+    </div>
+
+    <div id="scroll-container" class="scroll-container">
+      <section
+        class="scroll-section section-content align-left"
+        data-enter="12"
+        data-leave="26"
+        data-animation="slide-left"
+      >
+        <div class="section-inner">
+          <span class="section-label">001 / Field</span>
+          <h2 class="section-heading">Panels in open light</h2>
+          <p class="section-body">
+            Before wires and inverters enter the story, the array sits in pure
+            Nevada sun—geometry waiting to spin into motion.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="scroll-section section-content align-right"
+        data-enter="28"
+        data-leave="42"
+        data-animation="slide-right"
+      >
+        <div class="section-inner">
+          <span class="section-label">002 / Layers</span>
+          <h2 class="section-heading">Orbit reveals depth</h2>
+          <p class="section-body">
+            The transition pulls the stack apart: encapsulant, cells, busbars,
+            and frame—each layer earns a moment in the scroll-driven path.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="scroll-section section-content align-left"
+        data-enter="44"
+        data-leave="56"
+        data-animation="scale-up"
+      >
+        <div class="section-inner">
+          <span class="section-label">003 / Engineering</span>
+          <h2 class="section-heading">Built for the desert</h2>
+          <p class="section-body">
+            Thermal cycling, high irradiance, and long afternoons—every choice in
+            the module is there to keep performance honest year after year.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="scroll-section section-content align-right"
+        data-enter="58"
+        data-leave="68"
+        data-animation="rotate-in"
+      >
+        <div class="section-inner">
+          <span class="section-label">004 / Closure</span>
+          <h2 class="section-heading">Back into one surface</h2>
+          <p class="section-body">
+            The orbit completes: layers settle, the panel reads as a single
+            plane again—ready for racking, stringing, and the journey to your
+            roofline.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="scroll-section section-content align-left"
+        data-enter="70"
+        data-leave="80"
+        data-animation="clip-reveal"
+      >
+        <div class="section-inner">
+          <span class="section-label">005 / Connection</span>
+          <h2 class="section-heading">From photons to the grid</h2>
+          <p class="section-body">
+            Solar is more than hardware—it is how Nevada homes and businesses
+            feed clean electrons into a system NV Energy helps operate and
+            improve every day.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="scroll-section section-stats"
+        data-enter="62"
+        data-leave="82"
+        data-animation="stagger-up"
+      >
+        <div class="stats-grid">
+          <div class="stat">
+            <span class="stat-number" data-value="292" data-decimals="0">0</span>
+            <span class="stat-suffix">days</span>
+            <span class="stat-label">Typical clear days / year — Las Vegas area</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-value="24" data-decimals="0">0</span>
+            <span class="stat-suffix">fps</span>
+            <span class="stat-label">Sequence capture</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-value="8" data-decimals="1">0</span>
+            <span class="stat-suffix">s</span>
+            <span class="stat-label">Full layer orbit</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="scroll-section section-content align-left section-cta"
+        data-enter="84"
+        data-leave="96"
+        data-animation="fade-up"
+        data-persist="true"
+      >
+        <div class="section-inner">
+          <span class="section-label">006 / Next step</span>
+          <h2 class="section-heading">Power forward with NV Energy</h2>
+          <p class="section-body">
+            Explore efficiency programs, renewable options, and ways to bring
+            solar thinking into your bill, your business, and your community.
+          </p>
+          <a
+            class="cta-button"
+            href="https://www.nvenergy.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Visit NV Energy</a
+          >
+          <a class="cta-button cta-button--ghost" href="#hero-standalone">Back to start</a>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="js/nv-energy-solar.js"></script>
+  </body>
+</html>
